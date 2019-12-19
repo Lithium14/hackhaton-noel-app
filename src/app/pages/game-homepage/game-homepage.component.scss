@@ -259,6 +259,11 @@
     z-index: 2;
   }
 
+  .planet:hover{
+    cursor: pointer;
+    width: +10%;
+  }
+
   #santatouine{
     border: 30px solid rgba(0,0,0,.15); // shadow effect
     background: white;
