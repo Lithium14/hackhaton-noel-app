@@ -8,7 +8,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { LetterComponent } from './pages/scenario/letter/letter.component';
 import { SantaComponent } from './pages/scenario/santa/santa.component';
 import { GameHomepageComponent } from './pages/game-homepage/game-homepage.component';
-import { PlanetComponent } from './pages/planet/planet.component';
+import { MoonComponent } from './pages/moon/moon.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { PlanetComponent } from './pages/planet/planet.component';
     LetterComponent,
     SantaComponent,
     GameHomepageComponent,
-    PlanetComponent
+    MoonComponent
   ],
   imports: [
     BrowserModule,
