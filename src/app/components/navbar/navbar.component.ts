@@ -14,6 +14,11 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    window.setTimeout(function() {
+      alert('Hello World!');
+    }, 30000);
   }
+
+ 
 
 }

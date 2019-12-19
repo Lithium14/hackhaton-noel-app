@@ -45,7 +45,7 @@ export class MoonComponent implements OnInit {
 
 
 
-  elfDetected(index:number, id: number) {
+  elfDetected(index: number, id: number) {
     if (id > 1) {
       this.score += 50;
     } else {
