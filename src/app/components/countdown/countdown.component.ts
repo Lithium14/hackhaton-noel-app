@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CountdownGlobalConfig } from 'ngx-countdown';
 
 @Component({
   selector: 'app-countdown',

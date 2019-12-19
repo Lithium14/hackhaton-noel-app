@@ -25,6 +25,7 @@ import { FormsModule } from '@angular/forms';
 import { MoonComponent } from './pages/moon/moon.component';
 import { MarsComponent } from './components/mars/mars.component';
 import { CountdownComponent } from './components/countdown/countdown.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,9 @@ import { CountdownComponent } from './components/countdown/countdown.component';
     GameHomepageComponent,
     SigninComponent,
     MoonComponent,
-    MarsComponent
+    MarsComponent,
+    NavbarComponent,
+    CountdownComponent,
 
   ],
   imports: [
@@ -48,7 +51,6 @@ import { CountdownComponent } from './components/countdown/countdown.component';
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
-    CountdownComponent,
     CountdownModule,
     AppRoutingModule,
     BrowserAnimationsModule,
