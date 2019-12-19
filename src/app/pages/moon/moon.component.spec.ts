@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PlanetComponent } from './planet.component';
+import { MoonComponent } from './moon.component';
 
-describe('PlanetComponent', () => {
-  let component: PlanetComponent;
-  let fixture: ComponentFixture<PlanetComponent>;
+describe('MoonComponent', () => {
+  let component: MoonComponent;
+  let fixture: ComponentFixture<MoonComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PlanetComponent ]
+      declarations: [ MoonComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PlanetComponent);
+    fixture = TestBed.createComponent(MoonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
