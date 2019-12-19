@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
+  isModalVisible = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  showModal() {
+    this.isModalVisible = !this.isModalVisible;
+
   }
 
 }
