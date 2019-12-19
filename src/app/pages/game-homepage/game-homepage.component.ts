@@ -10,6 +10,8 @@ export class GameHomepageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
+
 
 }
