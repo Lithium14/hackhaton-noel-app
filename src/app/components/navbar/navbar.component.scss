@@ -3,14 +3,17 @@ section {
   display: flex;
   top: 0px;
   z-index: 50;
-//   background-color: aliceblue;
+  //   background-color: aliceblue;
   width: 100%;
-  font-size: 50px;
   align-items: center;
   justify-content: space-evenly;
   height: 100px;
 
-  h1, h2 {
+  h1,
+  h2,
+  p {
     color: white;
+    font-size: 50px;
+    font-weight: bold;
   }
 }

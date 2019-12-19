@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { CountdownGlobalConfig } from 'ngx-countdown';
+import { CountdownGlobalConfig, CountdownConfig } from 'ngx-countdown';
 
 @Component({
   selector: 'app-countdown',
@@ -9,6 +9,7 @@ import { CountdownGlobalConfig } from 'ngx-countdown';
 export class CountdownComponent implements OnInit {
   format: string;
 
+  config: CountdownConfig = {format: 's', leftTime: 30};
 
   constructor() { }
 
