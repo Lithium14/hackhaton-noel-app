@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { CountdownModule, CountdownGlobalConfig } from 'ngx-countdown';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +25,8 @@ import { FormsModule } from '@angular/forms';
 import { MoonComponent } from './pages/moon/moon.component';
 import { MarsComponent } from './components/mars/mars.component';
 
+import { PlanetComponent } from './pages/planet/planet.component';
+import { CountdownComponent } from './components/countdown/countdown.component';
 
 @NgModule({
   declarations: [
@@ -46,10 +50,17 @@ import { MarsComponent } from './components/mars/mars.component';
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
+    PlanetComponent,
+    CountdownComponent,
+    CountdownModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule
   ],
-  providers: [],
+  providers: [
+    { provide: CountdownGlobalConfig }
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
