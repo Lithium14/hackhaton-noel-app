@@ -21,11 +21,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MoonComponent } from './pages/moon/moon.component';
 import { MarsComponent } from './components/mars/mars.component';
-
-import { PlanetComponent } from './pages/planet/planet.component';
 import { CountdownComponent } from './components/countdown/countdown.component';
 
 @NgModule({
@@ -50,12 +49,12 @@ import { CountdownComponent } from './components/countdown/countdown.component';
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
-    PlanetComponent,
     CountdownComponent,
     CountdownModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [
     { provide: CountdownGlobalConfig }
