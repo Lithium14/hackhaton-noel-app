@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { CountdownModule, CountdownGlobalConfig } from 'ngx-countdown';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { LetterComponent } from './pages/scenario/letter/letter.component';
 import { SantaComponent } from './pages/scenario/santa/santa.component';
 import { GameHomepageComponent } from './pages/game-homepage/game-homepage.component';
 import { PlanetComponent } from './pages/planet/planet.component';
+import { CountdownComponent } from './components/countdown/countdown.component';
 
 @NgModule({
   declarations: [
@@ -18,15 +20,20 @@ import { PlanetComponent } from './pages/planet/planet.component';
     LetterComponent,
     SantaComponent,
     GameHomepageComponent,
-    PlanetComponent
+    PlanetComponent,
+    CountdownComponent
   ],
   imports: [
     BrowserModule,
+    CountdownModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     RouterModule
   ],
-  providers: [],
+  providers: [
+    { provide: CountdownGlobalConfig }
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
