@@ -244,19 +244,13 @@
   }
 
   .container1{
-    top: 50%;
-    left: 50%;
+    top: 46%;
+    left: 46%;
   }
   
 
-  .planet {
-    box-sizing: border-box;
-    position: absolute;
-    border-radius: 100%;
-    overflow: hidden;
-    margin-left: -99px;
-    margin-top: -100px;
-    z-index: 2;
+  .planet:hover{
+    cursor: pointer;
   }
 
   #santatouine{
@@ -323,12 +317,15 @@
 //     }
 //   }
 #planet1{
-  height: 200px;
-  width: 200px;
+    width: 500px;
 }
 
   #planet2{
     width: 160px;
+  }
+
+  #planet3{
+      width: 200px;
   }
 
   #container2{
@@ -337,8 +334,8 @@
 }
 
 #container3{
-    top: 63%;
-    left: 60%;
+    top: 66%;
+    left: 69%;
 }
 
 #container4{

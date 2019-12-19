@@ -9,6 +9,7 @@ import { LetterComponent } from './pages/scenario/letter/letter.component';
 import { SantaComponent } from './pages/scenario/santa/santa.component';
 import { GameHomepageComponent } from './pages/game-homepage/game-homepage.component';
 import { MoonComponent } from './pages/moon/moon.component';
+import { MarsComponent } from './components/mars/mars.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MoonComponent } from './pages/moon/moon.component';
     LetterComponent,
     SantaComponent,
     GameHomepageComponent,
-    MoonComponent
+    MoonComponent,
+    MarsComponent
   ],
   imports: [
     BrowserModule,
