@@ -1,0 +1,35 @@
+<div class ="container">
+  <div class="containerHTML">
+    <form class="example-form">
+      <div class="div-name">
+        <mat-form-field>
+          <input matInput placeholder="Pseudo" value="">
+        </mat-form-field>
+    </div>
+
+      <div class="div-choice">
+        <mat-form-field>
+          <input matInput placeholder="Email" value="">
+        </mat-form-field>
+      </div>
+
+      <div class="div-password">
+        <mat-form-field>
+          <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <div class="button" >
+        <button mat-flat-button [routerLink]="['/user']" routerLinkActive="router-link-active"  color="Connexion">Connexion</button>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+
+
+
+
