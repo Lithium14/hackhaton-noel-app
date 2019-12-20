@@ -31,6 +31,7 @@ import { SocketComponent } from './socket/socket.component';
 
 import { CountdownComponent } from './components/countdown/countdown.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { TableauScoreComponent } from './pages/tableau-score/tableau-score.component';
 
 
 @NgModule({
@@ -43,13 +44,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     SigninComponent,
     MoonComponent,
     MarsComponent,
-
     SocketComponent,
-
     NavbarComponent,
     CountdownComponent,
-
-
+    TableauScoreComponent,
   ],
   imports: [
     BrowserModule,
