@@ -1,3 +1,5 @@
+import { MarsComponent } from './pages/mars/mars.component';
+
 import { SigninComponent } from './pages/signin/signin.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { MoonComponent } from './pages/moon/moon.component';
@@ -27,6 +29,10 @@ const routes: Routes = [
   {
     path: 'moon',
     component: MoonComponent
+  },
+  {
+    path: 'mars',
+    component: MarsComponent
   }
 ];
 
