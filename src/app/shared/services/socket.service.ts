@@ -9,24 +9,52 @@ import * as io from 'socket.io-client';
 })
 export class SocketService {
 
-  socket: any;
-  readonly uri: string = 'ws://localhost:3000';
-  constructor() {
-    this.socket = io(this.uri);
-   }
 
 
-  listen(eventName: string) {
-    return new Observable((subscriber) => {
-      this.socket.on(eventName, (data) => {
-        subscriber.next(data);
-      });
-    });
+  private socket = io('http://localhost:1234');
 
-
-    }
-    emit(eventName: string, data: any) {
-      this.socket.emit(eventName, data);
-    }
+  joinRoom(data) {
+      this.socket.emit('join', data);
   }
 
+  newUserJoined() {
+      const observable = new Observable<{user: string, message: string}>(observer => {
+          this.socket.on('new user joined', (data) => {
+              observer.next(data);
+          });
+          return () => {this.socket.disconnect(); };
+      });
+
+      return observable;
+  }
+
+  leaveRoom(data) {
+      this.socket.emit('leave', data);
+  }
+
+  userLeftRoom() {
+      const observable = new Observable<{user: string, message: string}>(observer => {
+          this.socket.on('left room', (data) => {
+              observer.next(data);
+          });
+          return () => {this.socket.disconnect(); };
+      });
+
+      return observable;
+  }
+
+  sendMessage(data) {
+      this.socket.emit('message', data);
+  }
+
+  newMessageReceived() {
+      const observable = new Observable<{user: string, message: string}>(observer => {
+          this.socket.on('new message', (data) => {
+              observer.next(data);
+          });
+          return () => {this.socket.disconnect(); };
+      });
+
+      return observable;
+  }
+}

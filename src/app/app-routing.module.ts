@@ -8,11 +8,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { LetterComponent } from './pages/scenario/letter/letter.component';
 import { SantaComponent } from './pages/scenario/santa/santa.component';
 import { GameHomepageComponent } from './pages/game-homepage/game-homepage.component';
+import { TableauScoreComponent } from './pages/tableau-score/tableau-score.component';
 
 
 const routes: Routes = [
-  {  path: '',
-    component: HomepageComponent},
+  // {  path: '',
+  //   component: HomepageComponent},
   {
      path: 'santa',
      component: SantaComponent
@@ -34,6 +35,7 @@ const routes: Routes = [
     path: 'mars',
     component: MarsComponent
   }
+
 ];
 
 @NgModule({

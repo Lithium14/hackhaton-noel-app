@@ -1,6 +1,8 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { CountdownComponent, CountdownConfig, CountdownEvent } from 'ngx-countdown';
 
+import { Score } from '../../shared/models/score';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',

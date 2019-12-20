@@ -1,0 +1,42 @@
+.backgroundSanta {
+  width: 100%;
+}
+
+.santa {
+  z-index: 1;
+  position: absolute;
+  bottom: -2%;
+  left: 15%;
+  width: 50%;
+}
+
+.scaredSanta {
+  width: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background: #191919;
+}
+
+.bubble-text {
+  background: WHite;
+  color: rgb(121, 86, 86);
+  padding: 7px 15px;
+  border-radius: 15px;
+  width: 633px;
+  z-index: 1;
+  position: absolute;
+  top: 0%;
+  left: 55%;
+  font-size: 2em;
+}
+
+.bubble-text::after {
+  content: "";
+
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid white;
+  position: absolute;
+}

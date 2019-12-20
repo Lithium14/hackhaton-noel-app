@@ -1,7 +1,7 @@
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { CountdownModule, CountdownGlobalConfig } from 'ngx-countdown';
+import { CountdownModule, CountdownGlobalConfig, CountdownComponent } from 'ngx-countdown';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +29,7 @@ import { SocketComponent } from './socket/socket.component';
 
 
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { TableauScoreComponent } from './pages/tableau-score/tableau-score.component';
 
 
 @NgModule({
@@ -43,9 +44,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MarsComponent,
     SocketComponent,
 
-    NavbarComponent
 
 
+
+    NavbarComponent,
+    CountdownComponent,
+    TableauScoreComponent,
   ],
   imports: [
     BrowserModule,
