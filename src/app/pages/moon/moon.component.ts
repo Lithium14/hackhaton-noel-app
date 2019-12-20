@@ -1,4 +1,4 @@
-import { Elf } from './../../shared/class/elf';
+import { Elf } from './../../shared/models/elf';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -44,7 +44,7 @@ export class MoonComponent implements OnInit {
 
 
   elfDetected(id: number) {
-    if (id > 1) {
+    if (id >= 2) {
       this.score += 50;
     } else {
       this.score -= 100;

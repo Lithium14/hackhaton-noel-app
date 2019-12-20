@@ -1,3 +1,5 @@
+import { SigninComponent } from './pages/signin/signin.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
 import { MoonComponent } from './pages/moon/moon.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -7,6 +9,8 @@ import { GameHomepageComponent } from './pages/game-homepage/game-homepage.compo
 
 
 const routes: Routes = [
+  {  path: '',
+    component: HomepageComponent},
   {
      path: 'santa',
      component: SantaComponent
