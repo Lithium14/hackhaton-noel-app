@@ -1,3 +1,4 @@
+import { SocketComponent } from './socket/socket.component';
 import { MarsComponent } from './pages/mars/mars.component';
 
 import { SigninComponent } from './pages/signin/signin.component';
@@ -12,8 +13,8 @@ import { TableauScoreComponent } from './pages/tableau-score/tableau-score.compo
 
 
 const routes: Routes = [
-  // {  path: '',
-  //   component: HomepageComponent},
+  {  path: '',
+    component: HomepageComponent},
   {
      path: 'santa',
      component: SantaComponent
@@ -34,7 +35,9 @@ const routes: Routes = [
   {
     path: 'mars',
     component: MarsComponent
-  }
+  },
+  { path: 'socket',
+  component: SocketComponent}
 
 ];
 
