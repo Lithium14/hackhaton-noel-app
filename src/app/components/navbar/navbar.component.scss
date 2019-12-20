@@ -17,3 +17,30 @@ section {
     font-weight: bold;
   }
 }
+
+.timeOut {
+  z-index: 100;
+  width: 800px;
+  height: 250px;
+  background-color: white;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 300px;
+  top: 40%;
+  left: 30%;
+  color: rgba(230, 47, 47, 0.849);
+  font-size: 100px;
+  border-radius: 12px;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+
+
+.countdown {
+  width: 300px;
+  font-family: 'Lilita One', cursive;
+  font-size: 100px;
+  color: red;
+}

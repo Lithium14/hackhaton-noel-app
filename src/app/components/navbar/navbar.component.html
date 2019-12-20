@@ -1,9 +1,15 @@
 <section>
     <p>
         Time:
-        <app-countdown></app-countdown>
+        <countdown class="countdown" #counter [config]="config" (done)="terminate()" (event)="terminate($event)" ></countdown>
         Sec
     </p>
     <h1>{{title}}</h1>
     <h2>Score : {{score}}</h2>
 </section>
+
+<button *ngIf="timeOut" class="timeOut" [routerLink]="['/game']">
+    <div>
+        <p> Too late! </p>
+    </div>
+</button>

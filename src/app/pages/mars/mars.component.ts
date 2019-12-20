@@ -3,16 +3,16 @@ import { Component, OnInit, Output, EventEmitter, Input, ViewChild } from '@angu
 import { NavbarComponent } from 'src/app/components/navbar/navbar.component';
 
 @Component({
-  selector: 'app-moon',
-  templateUrl: './moon.component.html',
-  styleUrls: ['./moon.component.scss']
+  selector: 'app-mars',
+  templateUrl: './mars.component.html',
+  styleUrls: ['./mars.component.scss']
 })
-export class MoonComponent implements OnInit {
+export class MarsComponent implements OnInit {
 
 
   @ViewChild('navbar', {static: true}) navbar: NavbarComponent;
 
-  title = 'Moon';
+  title = "Mars";
 
 stopCount = false;
 

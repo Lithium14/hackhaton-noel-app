@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { ScrollStrategyOptions } from '@angular/cdk/overlay';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { CountdownComponent, CountdownConfig, CountdownEvent } from 'ngx-countdown';
 
 import { Score } from '../../shared/models/score';
 
@@ -9,19 +9,32 @@ import { Score } from '../../shared/models/score';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  @ViewChild('counter', { static: false }) countdown: CountdownComponent;
 
-  constructor( ) { }
+  constructor() { }
 
+  format: string;
 
+  config: CountdownConfig = {format: 's', leftTime: 30};
+
+  timeOut = false;
   @Input() title;
   @Input() score;
 
-  ngOnInit() {
-    const id = window.setTimeout(() => {
-      alert('Hello World!');
-    }, 30000);
-
+  ngOnInit(): void {
 
   }
 
+
+terminate(event: CountdownEvent) {
+  if (event.action === 'done') {
+    this.timeOut = true;
+  }
+
 }
+
+stop() {
+  this.countdown.stop();
+}
+}
+

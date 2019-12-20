@@ -1,4 +1,6 @@
-import { SocketComponent } from './socket/socket.component';
+import { MarsComponent } from './pages/mars/mars.component';
+
+import { SigninComponent } from './pages/signin/signin.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { MoonComponent } from './pages/moon/moon.component';
 import { NgModule } from '@angular/core';
@@ -29,13 +31,9 @@ const routes: Routes = [
     path: 'moon',
     component: MoonComponent
   },
-
-  { path: '',
-    component: SocketComponent}
-
   {
-    path: 'score',
-    component: TableauScoreComponent
+    path: 'mars',
+    component: MarsComponent
   }
 
 ];

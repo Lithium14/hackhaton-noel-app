@@ -1,7 +1,7 @@
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { CountdownModule, CountdownGlobalConfig } from 'ngx-countdown';
+import { CountdownModule, CountdownGlobalConfig, CountdownComponent } from 'ngx-countdown';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,14 +22,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { MarsComponent } from './pages/mars/mars.component';
 import { MoonComponent } from './pages/moon/moon.component';
-import { MarsComponent } from './components/mars/mars.component';
 
 import { SocketComponent } from './socket/socket.component';
 
 
-import { CountdownComponent } from './components/countdown/countdown.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TableauScoreComponent } from './pages/tableau-score/tableau-score.component';
 
@@ -45,6 +43,10 @@ import { TableauScoreComponent } from './pages/tableau-score/tableau-score.compo
     MoonComponent,
     MarsComponent,
     SocketComponent,
+
+
+
+
     NavbarComponent,
     CountdownComponent,
     TableauScoreComponent,

@@ -434,3 +434,7 @@
     height: 50px;
     z-index: 50;
   }
+
+  planet.hover{
+    transform: rotate(45deg);
+  }
