@@ -1,4 +1,4 @@
-import { SigninComponent } from './pages/signin/signin.component';
+import { SocketComponent } from './socket/socket.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { MoonComponent } from './pages/moon/moon.component';
 import { NgModule } from '@angular/core';
@@ -9,8 +9,8 @@ import { GameHomepageComponent } from './pages/game-homepage/game-homepage.compo
 
 
 const routes: Routes = [
-  {  path: '',
-    component: HomepageComponent},
+  // {  path: '',
+  //   component: HomepageComponent},
   {
      path: 'santa',
      component: SantaComponent
@@ -27,7 +27,9 @@ const routes: Routes = [
   {
     path: 'moon',
     component: MoonComponent
-  }
+  },
+  { path: '',
+    component: SocketComponent}
 ];
 
 @NgModule({

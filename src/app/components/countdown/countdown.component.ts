@@ -11,7 +11,7 @@ import { CountdownGlobalConfig, CountdownConfig } from 'ngx-countdown';
 export class CountdownComponent implements OnInit {
   format: string;
 
-  config: CountdownConfig = {format: 's', leftTime: 30};
+  config: CountdownConfig = {format: 's', leftTime: 15};
 
   constructor() { }
 
