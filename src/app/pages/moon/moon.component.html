@@ -1,8 +1,9 @@
+<app-navbar [title]="title" [score]="score"></app-navbar>
 <div class="planetImage">
     <img src="https://media.rainpos.com/7774/moon_colony.jpg" alt="">
   </div>
 
 <div *ngFor="let elf of elfs; let i = index" class="{{elf.name}}">
-  <img src="{{elf.image}}" alt="{{elf.name}}" (click)="elfDetected(i)">
+  <img src="{{elf.image}}" alt="{{elf.name}}" (click)="elfDetected(i, elf.id)">
 </div>
 

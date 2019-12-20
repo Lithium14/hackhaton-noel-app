@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoonComponent implements OnInit {
 
+  title = 'Moon';
+
   score = 0;
   elfs: Elf[] = [{
     id: 1,
@@ -43,8 +45,8 @@ export class MoonComponent implements OnInit {
 
 
 
-  elfDetected(id: number) {
-    if (id >= 2) {
+  elfDetected(index: number, id: number) {
+    if (id > 1) {
       this.score += 50;
     } else {
       this.score -= 100;
@@ -52,7 +54,7 @@ export class MoonComponent implements OnInit {
     console.log(this.score);
     console.log(id);
 
-    return this.elfs.splice(id, 1);
+    return this.elfs.splice(index, 1);
 
   }
 }
