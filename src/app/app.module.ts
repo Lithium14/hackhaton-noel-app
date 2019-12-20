@@ -36,7 +36,8 @@ import { CountdownComponent } from './components/countdown/countdown.component';
     GameHomepageComponent,
     SigninComponent,
     MoonComponent,
-    MarsComponent
+    MarsComponent,
+    CountdownComponent
 
   ],
   imports: [
@@ -49,7 +50,6 @@ import { CountdownComponent } from './components/countdown/countdown.component';
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
-    CountdownComponent,
     CountdownModule,
     AppRoutingModule,
     BrowserAnimationsModule,
