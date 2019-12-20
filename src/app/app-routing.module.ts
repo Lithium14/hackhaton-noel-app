@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LetterComponent } from './pages/scenario/letter/letter.component';
 import { SantaComponent } from './pages/scenario/santa/santa.component';
 import { GameHomepageComponent } from './pages/game-homepage/game-homepage.component';
+import { TableauScoreComponent } from './pages/tableau-score/tableau-score.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'moon',
     component: MoonComponent
+  },
+  {
+    path: 'score',
+    component: TableauScoreComponent
   }
 ];
 
