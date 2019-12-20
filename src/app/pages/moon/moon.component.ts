@@ -1,4 +1,4 @@
-import { Elf } from './../../shared/class/elf';
+import { Elf } from './../../shared/models/elf';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
