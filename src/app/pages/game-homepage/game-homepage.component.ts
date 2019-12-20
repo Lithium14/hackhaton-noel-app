@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { MergeMapSubscriber } from 'rxjs/internal/operators/mergeMap';
 
 @Component({
   selector: 'app-game-homepage',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameHomepageComponent implements OnInit {
 
+  planetName: string;
+  planets: ['Mercure', 'Mars', 'Venus', 'Terre', 'Jupiter', 'Saturne', 'Uranus', 'Neptune', 'Moon'];
+
   constructor() { }
 
   ngOnInit() {
+
+  }
+
+  displayNumber(i) {
+
+  }
+
+  hideNumber() {
 
   }
 

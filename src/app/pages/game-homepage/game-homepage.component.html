@@ -32,8 +32,9 @@
             <img src="../../../assets/bonnetplanet.png" alt="" id="planet1">
         </div>
     </div>
+
     <div class="planet-container" id="container2">
-        <img src="../../../assets/mercure.png" alt="" class="planet" id="planet2">
+        <img src="../../../assets/mercure.png" alt="" class="planet" id="planet2" (mouseenter)="displayNumber()">
     </div>
     <div class="planet-container" id="container3">
         <img src="../../../assets/mars.png" alt="" class="planet" id="planet3">
@@ -57,9 +58,11 @@
         <img src="../../../assets/neptune.png" alt="" class="planet" id="planet9">
     </div>
     <div class="planet-container" id="container10">
-        <a [routerLink]="['/moon']" routerLinkActive="router-link-active" >
-            <img src="../../../assets/moon.png" alt="" class="planet" id="planet10">
+        <a [routerLink]="['/moon']" routerLinkActive="router-link-active">
+            <img src="../../../assets/moon.png" alt="" class="planet" id="planet10" (mouseenter)="displayNumber(i)"
+                (mouseleave)="hideNumber()">
         </a>
     </div>
+
 
 </div>
