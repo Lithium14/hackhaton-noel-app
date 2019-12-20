@@ -43,13 +43,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     SigninComponent,
     MoonComponent,
     MarsComponent,
-
     SocketComponent,
-
     NavbarComponent,
     CountdownComponent,
-
-
   ],
   imports: [
     BrowserModule,
